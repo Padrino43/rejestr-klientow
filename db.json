@@ -1,9 +1,76 @@
 {
   "users": [
-    { "id": 1, "email": "json-server", "password": "typicode", "username": "test123" }
+    {
+      "id": 1,
+      "email": "json-server",
+      "password": "1234",
+      "username": "test"
+    },
+    {
+      "email": "test@gmail.com",
+      "username": "halo",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "email": "testet@gmail.com",
+      "username": "test1",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "email": "",
+      "username": "",
+      "password": "",
+      "hobbies": [
+        ""
+      ],
+      "id": 4
+    },
+    {
+      "email": "",
+      "username": "",
+      "password": "",
+      "hobbies": [
+        ""
+      ],
+      "id": 5
+    },
+    {
+      "email": "",
+      "username": "",
+      "password": "",
+      "hobbies": [
+        "",
+        ""
+      ],
+      "id": 6
+    },
+    {
+      "email": "",
+      "username": "",
+      "password": "",
+      "hobbies": [
+        ""
+      ],
+      "id": 7
+    },
+    {
+      "email": "",
+      "username": "",
+      "password": "",
+      "hobbies": [
+        "",
+        ""
+      ],
+      "id": 8
+    }
   ],
   "clients": [
-    { "id": 1, "firstname": "Test", "surname": "Testowy",
+    {
+      "id": 1,
+      "firstname": "Test",
+      "surname": "Testowy",
       "email": "test@gmail.com",
       "phone": "123456789",
       "address": "Miasto ul. Testowa 12",
