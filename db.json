@@ -17,64 +17,44 @@
       "username": "test1",
       "password": "1234",
       "id": 3
-    },
-    {
-      "email": "",
-      "username": "",
-      "password": "",
-      "hobbies": [
-        ""
-      ],
-      "id": 4
-    },
-    {
-      "email": "",
-      "username": "",
-      "password": "",
-      "hobbies": [
-        ""
-      ],
-      "id": 5
-    },
-    {
-      "email": "",
-      "username": "",
-      "password": "",
-      "hobbies": [
-        "",
-        ""
-      ],
-      "id": 6
-    },
-    {
-      "email": "",
-      "username": "",
-      "password": "",
-      "hobbies": [
-        ""
-      ],
-      "id": 7
-    },
-    {
-      "email": "",
-      "username": "",
-      "password": "",
-      "hobbies": [
-        "",
-        ""
-      ],
-      "id": 8
     }
   ],
   "clients": [
     {
-      "id": 1,
-      "firstname": "Test",
-      "surname": "Testowy",
-      "email": "test@gmail.com",
+      "id": 2,
+      "firstname": "Test2",
+      "surname": "Testowy2",
+      "email": "test2@gmail.com",
       "phone": "123456789",
-      "address": "Miasto ul. Testowa 12",
-      "postcode": "111-11"
+      "address": "Miasto ul. Testowa 2",
+      "postcode": "222-22"
+    },
+    {
+      "id": 3,
+      "firstname": "Test3",
+      "surname": "Testowy3",
+      "email": "test3@gmail.com",
+      "phone": "123456789",
+      "address": "Miasto ul. Testowa 3",
+      "postcode": "333-33"
+    },
+    {
+      "firstname": "TestStrona",
+      "surname": "Strona",
+      "email": "teststrona@gmail.com",
+      "phone": "999999999",
+      "address": "ul. Testowastrona 12/13",
+      "postcode": "13-1313",
+      "id": 4
+    },
+    {
+      "firstname": "Grzegorz",
+      "surname": "Test20",
+      "email": "test20@gmail.com",
+      "phone": "8989898989",
+      "address": "awdadasdwad",
+      "postcode": "11-121",
+      "id": 5
     }
   ]
 }

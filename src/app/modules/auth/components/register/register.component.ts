@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../../../core/services/auth.service';
 import { PostUser } from '../../../core/models/user.model';
 import { Router } from '@angular/router';
+import { FormsService } from '../../../core/services/forms.service';
 
 @Component({
   selector: 'app-register',
@@ -34,24 +35,14 @@ export class RegisterComponent {
   constructor(
     private authService: AuthService,
     private router: Router,
+    private formService: FormsService,
   ) {}
 
   get controls() {
     return this.registerForm.controls;
   }
   getErrorMessage(control: FormControl) {
-    if (control.hasError('required')) {
-      return 'Ta wartość musi być podana.';
-    }
-
-    if (control.hasError('minlength')) {
-      return 'Za mało znaków.';
-    }
-    if (control.hasError('maxlength')) {
-      return 'Za dużo znaków.';
-    }
-
-    return control.hasError('email') ? 'Błędny adres email.' : '';
+    return this.formService.getErrorMessage(control);
   }
   onRegister() {
     const userData: PostUser = this.registerForm.getRawValue();
