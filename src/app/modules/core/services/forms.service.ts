@@ -19,6 +19,10 @@ export class FormsService {
       return 'Za dużo znaków.';
     }
 
+    if (control.hasError('invalidPostcode')) {
+      return 'Niepoprawny kod pocztowy. Poprawny format to xx-xxx.';
+    }
+
     return control.hasError('email') ? 'Błędny adres email.' : '';
   }
 }
