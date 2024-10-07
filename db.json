@@ -55,6 +55,24 @@
       "address": "awdadasdwad",
       "postcode": "11-121",
       "id": 5
+    },
+    {
+      "firstname": "Halo",
+      "surname": "Haloe",
+      "email": "haloehalo@vp.pl",
+      "phone": "++48123234345",
+      "address": "Siemanowa 123 / 3",
+      "postcode": "02-232",
+      "id": 6
+    },
+    {
+      "firstname": "Testowy54",
+      "surname": "Test54",
+      "email": "TestowyTest54@gmail.com",
+      "phone": "++344738293928",
+      "address": "ul. Gromocka 21/3",
+      "postcode": "23-234",
+      "id": 7
     }
   ]
 }

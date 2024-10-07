@@ -3,8 +3,6 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from './material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AlertComponent } from './components/alert/alert.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { PhoneControlComponent } from './controls/phone-control/phone-control.component';
 
 @NgModule({
@@ -15,8 +13,6 @@ import { PhoneControlComponent } from './controls/phone-control/phone-control.co
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
     AlertComponent,
     PhoneControlComponent,
   ],

@@ -4,7 +4,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -24,7 +23,6 @@ import { A11yModule } from '@angular/cdk/a11y';
     MatPaginatorModule,
     MatDialogModule,
     A11yModule,
-    BrowserAnimationsModule,
   ],
 })
 export class MaterialModule {}
