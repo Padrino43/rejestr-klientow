@@ -7,7 +7,7 @@ import { PhoneControlComponent } from './controls/phone-control/phone-control.co
 import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
-  declarations: [AlertComponent, PhoneControlComponent, HighlightDirective],
+  declarations: [AlertComponent, PhoneControlComponent],
   imports: [CommonModule, ReactiveFormsModule, MaterialModule],
   exports: [
     CommonModule,
@@ -16,7 +16,6 @@ import { HighlightDirective } from './directives/highlight.directive';
     ReactiveFormsModule,
     AlertComponent,
     PhoneControlComponent,
-    HighlightDirective,
   ],
 })
 export class SharedModule {}
