@@ -8,8 +8,8 @@ describe('PhoneControlComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [PhoneControlComponent]
-    })
+    imports: [PhoneControlComponent]
+})
     .compileComponents();
     
     fixture = TestBed.createComponent(PhoneControlComponent);

@@ -1,23 +1,30 @@
 import { Component, OnDestroy } from '@angular/core';
-import {
-  ControlValueAccessor,
-  FormControl,
-  NG_VALUE_ACCESSOR,
-  Validators,
-} from '@angular/forms';
+import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR, Validators, ReactiveFormsModule } from '@angular/forms';
 import { combineLatest, Subscription } from 'rxjs';
+import { NgIf } from '@angular/common';
+import { MatInput } from '@angular/material/input';
+import { MatFormField, MatLabel, MatError } from '@angular/material/form-field';
 
 @Component({
-  selector: 'app-phone-control',
-  templateUrl: './phone-control.component.html',
-  styleUrl: './phone-control.component.scss',
-  providers: [
-    {
-      provide: NG_VALUE_ACCESSOR,
-      useExisting: PhoneControlComponent,
-      multi: true,
-    },
-  ],
+    selector: 'app-phone-control',
+    templateUrl: './phone-control.component.html',
+    styleUrl: './phone-control.component.scss',
+    providers: [
+        {
+            provide: NG_VALUE_ACCESSOR,
+            useExisting: PhoneControlComponent,
+            multi: true,
+        },
+    ],
+    standalone: true,
+    imports: [
+        MatFormField,
+        MatLabel,
+        MatInput,
+        ReactiveFormsModule,
+        NgIf,
+        MatError,
+    ],
 })
 export class PhoneControlComponent implements ControlValueAccessor, OnDestroy {
   numberPrefixControl = new FormControl('', [Validators.required]);
